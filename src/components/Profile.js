@@ -7,13 +7,13 @@ const Profile = () => {
         <div>
             <div className='py-2 flex justify-between items-center bg-gradient-to-b from-[#6202ee] to-[rgba(98,2,238,.5)] text-white'>
                 <h1></h1>
-                <h1 className='text-3xl'>Profile</h1>
-                <h1 className='text-4xl pr-2'> <i class="fa-solid fa-language"></i></h1>
+                <h1 className='text-2xl font-bold'>Profile</h1>
+                <h1 className='text-3xl pr-2'> <i class="fa-solid fa-language"></i></h1>
             </div>
 
             {/* main profile */}
 
-            <div className='w-3/4 mx-auto'>
+            <div className='lg:w-3/5 mx-auto'>
 
                 <div className="flex justify-end mt-2">
                     <button className="btn btn-xs rounded-full bg-[#01A39D] border-0 text-white">
@@ -28,9 +28,9 @@ const Profile = () => {
                         </div>
                     </div>
                     <div className='ml-8'>
-                        <h1 className="text-2xl font-bold">{details.name}</h1>
-                        <p className="text-xl my-2">
-                            {details.loclevel3Name},{details.loclevel2Name}
+                        <h1 className="text-xl font-bold">{details.name}</h1>
+                        <p className="my-2">
+                            {details.loclevel3Name}, {details.loclevel2Name}
                         </p>
                         <p>
                             <i>Speaks English</i>
