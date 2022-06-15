@@ -1,5 +1,6 @@
 import React from 'react';
 import useGramoday from '../hooks/useGramoday';
+import Product from './Product';
 
 const Business = () => {
     const [details, setDetails] = useGramoday();
@@ -21,9 +22,9 @@ const Business = () => {
         <span className="font-bold ml-4">{details.business?.mandiShopnum}</span>
       </p>
       <p className="bg-slate-100 font-bold p-2">Products</p>
-      {/* {details?.products?.map((product, index) => (
+      {details?.products?.map((product, index) => (
         <Product product={product}  key={index}/>
-      ))} */}
+      ))}
     </div>
     );
 };
