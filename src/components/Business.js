@@ -1,11 +1,14 @@
 import React from 'react';
 import useGramoday from '../hooks/useGramoday';
 import Product from './Product';
+import Profile from './Profile';
 
 const Business = () => {
     const [details, setDetails] = useGramoday();
     return (
-        <div className="h-[60vh] overflow-y-scroll lg:w-3/5 mx-auto">
+      <div>
+         <div className="h-[52vh] overflow-y-scroll lg:w-3/5 mx-auto">
+        
       <h1 className="text-[#01A39D] font-bold text-xl mt-2">
         {details.business?.userOption}
       </h1>
@@ -26,6 +29,8 @@ const Business = () => {
         <Product product={product}  key={index}/>
       ))}
     </div>
+      </div>
+       
     );
 };
 
